@@ -3,13 +3,11 @@ package com.bridgelaqbz;
 public class FindMax {
     public static void main(String[] args) {
         System.out.println("welcome to the generic max problem solving statement");
-
-        //UC-1
-
-        //one = 52 ,two = 36,three = 86;  (Maximum Number is at 3rd Position).
-        System.out.println(maximumIntegerMethod(52, 36, 86));
+//one = 5.99f ,two = 4.31f,three = 8.31f;  (Maximum Number is at 3rd Position).
+        System.out.println(maximumFloatMethod("5.99f", "4.31f", "8.31f"));
     }
-    public static <T extends Comparable<T>> T maximumIntegerMethod(T one, T two, T three) {  //Return type of this method is <T> i.e Generic type with 3 parameters.
+
+    public static <T extends Comparable<T>> T maximumFloatMethod(T one, T two, T three) {  //Return type of this method is <T> i.e Generic type with 3 parameters.
 
         T maximum = one;                   //1 : Initially we assume that 'maximum' is 'one'.
 
@@ -25,7 +23,9 @@ public class FindMax {
         return maximum;                     //Finally returning the 'maximum'.
 
     }
+
 }
+
 
 
 
