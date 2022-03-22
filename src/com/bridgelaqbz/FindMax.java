@@ -3,11 +3,10 @@ package com.bridgelaqbz;
 public class FindMax {
     public static void main(String[] args) {
         System.out.println("welcome to the generic max problem solving statement");
-//one = 5.99f ,two = 4.31f,three = 8.31f;  (Maximum Number is at 3rd Position).
-        System.out.println(maximumFloatMethod("5.99f", "4.31f", "8.31f"));
+//one = Banana ,two = Apple ,three = Peach;  (Maximum Number is at 3rd Position).
+        System.out.println(maximumStringMethod("Banana", "Apple", "Peach"));
     }
-
-    public static <T extends Comparable<T>> T maximumFloatMethod(T one, T two, T three) {  //Return type of this method is <T> i.e Generic type with 3 parameters.
+    public static <T extends Comparable<T>> T maximumStringMethod(T one, T two, T three) {  //Return type of this method is <T> i.e Generic type with 3 parameters.
 
         T maximum = one;                   //1 : Initially we assume that 'maximum' is 'one'.
 
@@ -25,7 +24,6 @@ public class FindMax {
     }
 
 }
-
 
 
 
